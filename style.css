@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --themeColor: #ED8B07;
+    --buttonColor: #3085C3;
+    --navColor: #176B87;
+    --navOp: #C37204;
+    --footer: #3085C3;
+    --padding-x: 4rem;
+  }
+
+/* nav bar -----------------------------------------------------------------------------------*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 9vh;
+    padding: 0 var(--padding-x);
+    margin-top: 30px;
+}
+.right-nav img{
+    height: 5rem;
+    width: auto;
+    object-fit: cover;
+}
+.left-nav .nav-link{
+    color: var(--navOp);
+}
+.left-nav .nav-link:hover{
+    color: var(--navColor);
+}
+.left-nav button{
+    
+    border-radius: 25px;
+    background: #3085C3;
+    box-shadow: 0px 2px 4px 0px #CB790B;
+    padding: 10px 2rem;
+    color: white;
+}
+
+/* main body -----------------------------------------------------------------------------------*/
+
+.main{
+    padding: var(--padding-x);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* landind page -----------------------------------------------------------------------------------*/
+
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+/* landind page - left  ################################*/
+
+.landing .land-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+  
+}
+.land-left .para1{
+    
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.land-left .para1 span{
+color: #ED8B07;
+font-size: 55px;
+font-style: normal;
+font-weight: 600;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-transform: capitalize;
+}
+
+.land-left .para2{
+color: #000;
+font-size: 36px;
+font-style: normal;
+font-weight: 300;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.land-left button{
+    border-radius: 25px;
+    background: #3085C3;
+    box-shadow: 0px 2px 4px 0px #CB790B;
+    padding: 10px 2rem;
+    color: white;
+}
+.land-left .land-download svg{
+    color: var(--themeColor);
+    width: 30px;
+    height: 30px;
+}
+.land-left .land-download span{
+    margin-left: 20px;
+}
+
+
+/* landind page - right  ################################*/
+
+.landing .land-right{
+
+    display: flex;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* About page -----------------------------------------------------------------------------------*/
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+
+}
+.about h1{
+    color: #ED8B07;
+font-size: 55px;
+font-style: normal;
+font-weight: 600;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-transform: capitalize;
+margin-bottom: 3rem;
+margin-left: 30rem;
+}
+.about .line{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.about img{
+    height: 5rem;
+    width: auto;
+    object-fit: cover;
+}
+.about .one {
+    margin-left: -20rem;
+}
+.about .two {
+    margin-left: -10rem;
+    margin-top: -2rem;
+}
+
+.about .one img{
+    width: 140px;
+height: 208.129px;
+    object-fit: cover;
+}
+.about .two img{
+    width: 250px;
+    height: 259.15px;
+    object-fit: cover;
+}
+.about .three img{
+    height: 8rem;
+    width: auto;
+    object-fit: cover;
+}
+.about .read{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1rem;
+    margin-right: 15rem;
+}
+.about button{
+    border-radius: 25px;
+    background: #3085C3;
+    box-shadow: 0px 2px 4px 0px #CB790B;
+    padding: 10px 2rem;
+    color: white;
+}
+.about .three p{
+    margin-top: -2rem;
+}
+.about .two p{
+    margin-top: -2rem;
+}
+.about .one p{
+    margin-left: 3rem;
+}
+
+
+/* features page -----------------------------------------------------------------------------------*/
+
+.features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    gap: 6rem;
+    justify-content: center;
+}
+.features h1{
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+    display: flex;
+    justify-content: center;
+}
+.features h1 span{
+    color: #ED8B07;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.features .fList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+.fList .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fList .feature .img img{
+    width: 110px;
+height: 110px;
+    object-fit: cover;
+}
+.fList .feature .describ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+.fList .feature .desc1{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 2rem 0 0 0;
+    padding: 0;
+
+}
+.fList .feature .desc2{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.features .buy{
+
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+}
+.features button{
+    border-radius: 25px;
+    background: #3085C3;
+    box-shadow: 0px 2px 4px 0px #CB790B;
+    padding: 10px 2rem;
+    color: white;
+}
+
+
+
